@@ -11,18 +11,64 @@ header {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+}
+
+.logo, .navbar {
+    margin-top: 0.05rem;
+}
+
 .nobreak {
     display: inline;
 }
 
 .navbar {
+    margin-top: 0.2rem;
     float: right;
+}
+
+.navbar a {
+    color: #fff;
+    border: #900404 solid 0.1rem;
+    border-radius: 5px;
+    padding: 0.15rem;
+    background-color: #900404;
+}
+
+.navbar a:visited {
+    color: #e0e0e0;
+    background-color: #bf2b32;
+}
+
+.navbar a:hover {
+    color: #b0b0b0;
+    background-color: #fff;
 }
 
 .title {
     font-size: 5rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 10rem;
     font-weight: 100;
     text-shadow: #919191 0 0 3px;
+    text-align: center;
+}
+
+.separator {
+    margin: 0 auto;
+    width: 90%;
+    height: 2px;
+    background-color: #900404;
+}
+
+.links {
+    color: #900404;
+}
+
+.links:visited {
+    color: #d10a0a;
+}
+
+.links:hover {
+    color: #919191;
 }
