@@ -11,7 +11,32 @@ header {
     color: #fff;
 }
 
+main {
+    text-align: center;
+}
+
 a {
+    text-decoration: none;
+}
+
+ol.toplevel {
+    counter-reset: toplevel_point;
+    list-style-type:none;
+}
+ol.toplevel li:before {
+    content: counter(toplevel_point) ". ";
+    counter-increment: toplevel_point;
+}
+ol.sublevel {
+    counter-reset: sublevel_point;
+    list-style-type:none;
+}
+ol.sublevel li:before {
+    content: counter(toplevel_point)"."counter(sublevel_point,decimal) ". ";
+    counter-increment: sublevel_point;
+}
+
+.no-text-deco {
     text-decoration: none;
 }
 
@@ -21,6 +46,30 @@ a {
 
 .nobreak {
     display: inline;
+}
+
+.underline {
+    text-decoration: underline solid;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small-print {
+    font-size: 0.6rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.block {
+    display: block;
 }
 
 .navbar {
@@ -59,6 +108,11 @@ a {
     width: 90%;
     height: 2px;
     background-color: #900404;
+}
+
+.separator-sm {
+    width: 40%;
+    height: 1px;
 }
 
 .links {
